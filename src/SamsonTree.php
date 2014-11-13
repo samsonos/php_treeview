@@ -9,11 +9,8 @@
 namespace samson\treeview;
 
 
-class SamsonTree extends \samson\core\CompressableExternalModule
+class SamsonTree
 {
-    /** Identifier */
-    protected $id = 'php_treeview';
-
     public $treeTemplate;
 
     public $recursion;
