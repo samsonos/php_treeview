@@ -5,7 +5,6 @@ var SamsonJSTreeview =
 {
     treeview : function(asyncRendering, asyncCompleteHandler)
     {
-        //s.trace(1);
         var useAsyncRendering = asyncRendering !== undefined ? asyncRendering : false;
         var completeHandler = asyncCompleteHandler !== undefined ? asyncCompleteHandler : false;
         // Указатель на самого себя
