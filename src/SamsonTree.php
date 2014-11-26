@@ -25,6 +25,18 @@ class SamsonTree
     }
 
     /**
+     * Help method for sorting structures
+     * @param $str1 \samson\cms\Navigation
+     * @param $str2 \samson\cms\Navigation
+     *
+     * @return bool
+     */
+    public function strSorting($str1, $str2)
+    {
+        return $str1['PriorityNumber']>$str2['PriorityNumber'];
+    }
+
+    /**
      * @param \samson\cms\Navigation $parent
      * @param string $html
      * @param int $level
@@ -43,6 +55,8 @@ class SamsonTree
 
             // Get structure children
             $children = $parent->children();
+
+            usort($children, array($this, 'strSorting'));
 
             // If we have children collection for this node
             if (sizeof($children)) {
