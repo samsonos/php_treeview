@@ -72,7 +72,7 @@ class SamsonTree
                                 // Start HTML list item and render this view
                                 $html .= '<li class="hasChildren" controller = "'.$this->controller.'">';
                             } else {
-                                $html .= '<li>';
+                                $html .= '<li class="noChildren">';
                             }
                             // Start HTML list item and render this view
                             $html .= m()->view($this->treeTemplate)
