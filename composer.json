@@ -2,8 +2,9 @@
     "name":"samsonos/php_treeview",
     "description": "SamsonPHP TreeView module",
     "author":"Pavlo Onysko <onysko@samsonos.com>",
+    "minimum-stability": "dev",
     "require":{
-        "samsonos/cms_api":"*"
+        "samsonocms/api":"*"
     },
     "license":"Open Software License (OSL) v 3.0",
     "homepage":"http://samsonos.com/",
@@ -12,5 +13,10 @@
         "psr-0": {
             "samson\\treeview": "src/"
         }
-    }
+    },
+    "config": {
+    "github-protocols": [
+      "https"
+    ]
+  }
 }
