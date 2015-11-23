@@ -4,7 +4,7 @@
     "author":"Pavlo Onysko <onysko@samsonos.com>",
     "minimum-stability": "dev",
     "require":{
-        "samsonocms/api":"*"
+        "samsoncms/api":"*"
     },
     "license":"Open Software License (OSL) v 3.0",
     "homepage":"http://samsonos.com/",
