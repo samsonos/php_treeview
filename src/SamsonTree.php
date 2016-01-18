@@ -21,7 +21,7 @@ class SamsonTree
     {
         $this->treeTemplate = $treeTemplate;
         $this->recursion = $recursion;
-        $this->controller = $asyncController;
+        $this->controller = 'cms/'.$asyncController;
     }
 
     /**
