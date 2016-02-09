@@ -87,7 +87,7 @@ var SamsonJSTreeview =
                         if (parent.a('controller') !== undefined ) {
                             controller = parent.a('controller');
                         }
-                        s.ajax(controller + id, function(response) {
+                        s.ajax(controller + id + '/', function(response) {
                             response = JSON.parse(response);
                             parent.append(response.tree);
                             link.addClass('children-uploaded');

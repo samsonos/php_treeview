@@ -43,7 +43,7 @@ class SamsonTree
      * @param int $currentNavID
      * @return string
      */
-    public function htmlTree(\samson\cms\Navigation & $parent = null, & $html = '', $level = 0, $currentNavID = 0)
+    public function htmlTree(\samsoncms\api\Navigation & $parent = null, & $html = '', $level = 0, $currentNavID = 0)
     {
         /** Collection of visited structures to avoid recursion */
         static $visited = array();
